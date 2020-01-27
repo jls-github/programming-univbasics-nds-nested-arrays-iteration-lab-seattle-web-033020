@@ -36,6 +36,7 @@ def find_greater_pair(src)
     end
     return_value.push(greatest_inner_value)
     greatest_inner_value = ""
+  end
 end
 
 def total_even_pairs(src)
