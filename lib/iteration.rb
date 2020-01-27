@@ -22,6 +22,20 @@ def find_greater_pair(src)
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # Produce a new Array that contains the larger number of each of the pairs
   # that are in the inner Arrays
+  
+  return_value = []
+  greatest_inner_value = ""
+  
+  src.each do |number_pair|
+    number_pair.each do |number|
+      if greatest_inner_value = ""
+        greatest_inner_value = number
+      elsif number > greatest_inner_value
+        greatest_inner_value = number
+      end
+    end
+    return_value.push(greatest_inner_value)
+    greatest_inner_value = ""
 end
 
 def total_even_pairs(src)
