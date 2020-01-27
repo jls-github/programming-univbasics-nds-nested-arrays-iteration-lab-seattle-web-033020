@@ -31,9 +31,7 @@ def find_greater_pair(src)
       if greatest_inner_value = ""
         greatest_inner_value = number
       elsif number > greatest_inner_value
-        unless number.negative?
-          greatest_inner_value = number
-        end
+        greatest_inner_value = number
       end
     end
   return_value.push(greatest_inner_value)
