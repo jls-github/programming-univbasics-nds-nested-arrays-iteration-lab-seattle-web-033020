@@ -48,4 +48,22 @@ def total_even_pairs(src)
   # As a reminder any number % 2 will return 0 or 1. If the result is 0, then
   # the number was even. Review the operator documentation if you've forgotten
   # this!
+  
+  total = 0
+  num1 = 0
+  num2 = 0
+  counter = 0
+  
+  src.each do |pair|
+    pair.each do |num|
+      if (counter == 0)
+      
+    end
+    
+    
+    num1 = 0
+    num2 = 0
+    counter = 0
+  end
+      
 end
