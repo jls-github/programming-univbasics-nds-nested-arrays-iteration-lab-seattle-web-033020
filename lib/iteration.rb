@@ -13,6 +13,7 @@ def join_ingredients(src)
       inner_array.push(element)
     end
     return_value = return_value.push("I love #{inner_array[0]} and #{inner_array[1]} on my pizza")
+    inner_array = []
   end
   return return_value
 end
