@@ -56,16 +56,18 @@ def total_even_pairs(src)
   
   src.each do |pair|
     pair.each do |num|
-      (counter == 0) ? (num1 = num) : (num2 = num)
+      (counter == 0) ? (num1 = num) : (num2 = num) #sets num1 and num2 to their respective values
       counter += 1
-      
-    end
+    end 
     
-    (num1 % 2 == 0 && num2 $ 2 == 0) ? (total += num1 = num2) : nil
+    (num1 % 2 == 0 && num2 $ 2 == 0) ? (total += num1 = num2) : (total += 0) #adds the values together if they are both even
     
     num1 = 0
     num2 = 0
     counter = 0
+    
+    #resets the counter and numbers
   end
-      
+  
+  return total
 end
