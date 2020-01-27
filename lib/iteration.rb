@@ -24,18 +24,18 @@ def find_greater_pair(src)
   # that are in the inner Arrays
   
   return_value = []
-  greatest_inner_value = nil
+  greatest_inner_value = ""
   
   src.each do |number_pair|
     number_pair.each do |number|
-      if greatest_inner_value = nil
+      if greatest_inner_value == ""
         greatest_inner_value = number
       elsif number > greatest_inner_value
         greatest_inner_value = number
       end
     end
     return_value.push(greatest_inner_value)
-    greatest_inner_value = nil
+    greatest_inner_value = ""
   end
   return return_value
 end
