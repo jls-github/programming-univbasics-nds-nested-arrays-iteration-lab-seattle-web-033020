@@ -60,7 +60,7 @@ def total_even_pairs(src)
       counter += 1
     end 
     
-    (num1 % 2 == 0 && num2 % 2 == 0) ? (total += num1 = num2) : (total += 0) #adds the values together if they are both even
+    (num1 % 2 == 0 && num2 % 2 == 0) ? (total += num1 + num2) : (total += 0) #adds the values together if they are both even
     
     num1 = 0
     num2 = 0
